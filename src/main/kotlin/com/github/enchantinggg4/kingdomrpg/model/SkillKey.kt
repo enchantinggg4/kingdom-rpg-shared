@@ -1,4 +1,4 @@
-package ru.kingdomrpg.krp.model
+package com.github.enchantinggg4.kingdomrpg.model
 
 enum class SkillKey(val path: Path) {
 

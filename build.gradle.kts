@@ -5,25 +5,26 @@ plugins {
 
 }
 
-group = "org.github.enchantinggg4"
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.enchantinggg4.kingdomrpg"
+            artifactId = "library"
+            version = "1.1"
+
+            from(components["java"])
+        }
+    }
+}
+
+group = "com.github.enchantinggg4"
 version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
     maven {
         setUrl("https://jitpack.io")
-    }
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            groupId = "org.github.enchantinggg4"
-            artifactId = "kingdomrpg-shared"
-            version = "1.1"
-
-            from(components["kotlin"])
-        }
     }
 }
 

@@ -1,4 +1,4 @@
-package ru.kingdomrpg.krp.model
+package com.github.enchantinggg4.kingdomrpg.model
 
 import kotlinx.serialization.Serializable
 

@@ -1,4 +1,4 @@
-package ru.kingdomrpg.krp.model
+package com.github.enchantinggg4.kingdomrpg.model
 
 data class XPInfoPacket(
     val paths: List<SkillPathDTO>,
