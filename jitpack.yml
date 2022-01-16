@@ -4,4 +4,4 @@ before_install:
   - ./custom_setup.sh
 install:
   - echo "Running a custom install command"
-  - ./gradlew clean install jar
+  - ./gradlew clean build jar
