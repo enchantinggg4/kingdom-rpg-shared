@@ -22,5 +22,5 @@ dependencies {
 
 
 tasks.register("install"){
-    finalizedBy("build")
+    finalizedBy("build").finalizedBy("jar")
 }
