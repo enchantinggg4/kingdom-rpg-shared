@@ -15,6 +15,18 @@ repositories {
     }
 }
 
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "org.github.enchantinggg4"
+            artifactId = "kingdomrpg-shared"
+            version = "1.1"
+
+            from(components["kotlin"])
+        }
+    }
+}
+
 dependencies {
     implementation(kotlin("stdlib"))
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
