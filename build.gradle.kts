@@ -2,15 +2,14 @@ plugins {
     kotlin("jvm") version "1.6.10"
     kotlin("plugin.serialization") version "1.6.10"
     id("maven-publish")
-
 }
 
 
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.github.enchantinggg4.kingdomrpg"
-            artifactId = "library"
+            groupId = "com.github.enchantinggg4"
+            artifactId = "kingdomrpg"
             version = "1.1"
 
             from(components["java"])
