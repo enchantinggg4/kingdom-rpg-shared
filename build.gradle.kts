@@ -1,4 +1,3 @@
-import jdk.internal.jshell.debug.InternalDebugControl.release
 
 plugins {
     kotlin("jvm") version "1.6.10"
