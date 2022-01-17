@@ -9,7 +9,7 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             groupId = "com.github.enchantinggg4"
-            artifactId = "kingdomrpg"
+            artifactId = "kingdom-rpg-shared"
             version = "1.1"
 
             from(components["java"])
