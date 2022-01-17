@@ -1,3 +1,5 @@
+import jdk.internal.jshell.debug.InternalDebugControl.release
+
 plugins {
     kotlin("jvm") version "1.6.10"
     kotlin("plugin.serialization") version "1.6.10"
@@ -9,8 +11,7 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             groupId = "com.github.enchantinggg4"
-            artifactId = "kingdom-rpg-shared"
-            version = "1.1"
+            artifactId = "kingdomrpgshared"
 
             from(components["java"])
         }
